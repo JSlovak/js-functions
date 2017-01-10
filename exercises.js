@@ -68,10 +68,8 @@ console.log(sum);
 */ 
 
 function subtract (num1, num2) {
-var Number = num1 - num2;
-return Number;
+	return num1 - num2;
 }
-
 
 var difference = subtract(bango1, bango2);
 console.log(difference);
@@ -136,7 +134,6 @@ console.log (divide);
 
 function checkSum (x){
 	return "Mariah Carey has been married " + x + " amount of times.";
-
 }
 
 console.log (checkSum(9));
@@ -158,7 +155,9 @@ function checkDifference (x){
 	
 }
 
-console.log (checkDifference(3));
+console.log (checkDifference(difference));
+
+
 
 /*
  * #8
@@ -224,6 +223,8 @@ function addThenSubtract(num1,num2,num3){
 }
 
 console.log (addThenSubtract(bango3, bango4, bango5));
+
+
 
 /*
  * #11
@@ -318,9 +319,13 @@ console.log (shoeSize(12));
  * Example output: "BELIEVE YOU CAN AND YOU'RE HALFWAY THERE."
 */
  
-//unction allCaps (str){
-	//return
+var str = "Hello World!";
 
+function allCaps (str){
+	return str.toUppercase(str);
+}
+
+console.log (allCaps("Hello World"));
 
 /*
  * #16
@@ -330,8 +335,6 @@ console.log (shoeSize(12));
  * Console.log your result.
 */
 
-//function oneCape (str){
-	//nodereturn
 
 
 /*
@@ -345,8 +348,15 @@ console.log (shoeSize(12));
  * Store the return value to a variable named `canDrink`. Console.log your result.
  */
 
-//function verifyDrinkingAge (age){
+function verifyDrinkingAge (age){
+	if (age >= 21){
+		return true; 
+		}
+		else { return false;
+		}
+	}
 
+console.log (verifyDrinkingAge(22));
 
 /**
  * #18
