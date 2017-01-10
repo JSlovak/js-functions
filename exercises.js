@@ -318,14 +318,13 @@ console.log (shoeSize(12));
  * Example input: "believe you can and you're halfway there."
  * Example output: "BELIEVE YOU CAN AND YOU'RE HALFWAY THERE."
 */
- 
-var str = "Hello World!";
 
 function allCaps (str){
-	return str.toUppercase(str);
+	return str.toUpperCase(); 
 }
 
-console.log (allCaps("Hello World"));
+console.log (allCaps("Hello World!"));
+var test = allCaps ("Hello World!");
 
 /*
  * #16
@@ -335,8 +334,11 @@ console.log (allCaps("Hello World"));
  * Console.log your result.
 */
 
+function oneCap (str) { 
+	return str.charAt(0).toUpperCase() + str.substr(1).toLowerCase();
+}
 
-
+console.log (oneCap("HELLO WORLD!"));
 /*
  * #17
  * Function - verifyDrinkingAge
@@ -351,12 +353,16 @@ console.log (allCaps("Hello World"));
 function verifyDrinkingAge (age){
 	if (age >= 21){
 		return true; 
-		}
-		else { return false;
-		}
 	}
+	else { return false;
+	}
+}
 
 console.log (verifyDrinkingAge(22));
+
+var canDrink = (verifyDrinkingAge(22));
+
+console.log (canDrink);
 
 /**
  * #18
@@ -365,8 +371,14 @@ console.log (verifyDrinkingAge(22));
  */
 
 
+function throwParty (){
+	if (true) {
+		return "Cheee Hoo! We going to da party!";
+	} else { return " Meh, see you at Starbucks.";
+	}
+}
 
-
+console.log (throwParty(canDrink));
 
 
 
